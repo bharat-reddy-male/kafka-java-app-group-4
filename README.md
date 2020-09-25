@@ -51,7 +51,7 @@ GitHub profile:
 --
 ## Chetan 
 
-GitHub profile:
+GitHub profile:[Chetan](https://github.com/chetankudaravalli16)
 
 --
 --
