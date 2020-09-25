@@ -35,7 +35,7 @@ GitHub profile:
 --
 ## Chinmayi
 
-GitHub profile:
+GitHub profile:[Chinmayi](https://github.com/Chinmayi98)
 
 --
 --
