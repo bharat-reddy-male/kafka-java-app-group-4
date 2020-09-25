@@ -20,7 +20,7 @@ GitHub profile: [bharat-reddy-male](https://github.com/bharat-reddy-male)
 --
 ## Bhavya Deepthi
 
-GitHub profile:
+GitHub profile: [Bhavya](https://github.com/Bhavya-123)
 
 --
 --
