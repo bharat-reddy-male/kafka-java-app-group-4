@@ -1,4 +1,4 @@
-package com.edu.nwmissouri.bigdatadevelopersg1;
+package com.edu.nwmissouri.bigdatadevelopersg4;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
  */
-public class ProducerHello {
+public class CustomProducerBharat {
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {

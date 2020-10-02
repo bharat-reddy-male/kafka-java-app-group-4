@@ -1,4 +1,4 @@
-package com.edu.nwmissouri.bigdatadevelopersg1;
+package com.edu.nwmissouri.bigdatadevelopersg4;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
