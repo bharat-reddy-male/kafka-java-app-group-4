@@ -39,8 +39,8 @@ public class CustomProducerBharat {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String series = fibonacci();
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, series);
+      String sum = sumOfRandoms();
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, sum);
       producer.send(rec);
     }
 
@@ -57,20 +57,16 @@ public class CustomProducerBharat {
     producer.close();
   }
 
-  private static String fibonacci() {
+  private static String sumOfRandoms() {
       Random r = new Random();
-      int lenghtOfSeries = r.nextInt(15);
-      int first = 0;
-      int next = 1;
-      int temp;
-    String series = "";
+      int lenghtOfSeries = r.nextInt(100);
+      
+    int total = 0;
 
       for(int j=0; j<lenghtOfSeries;j++){
-            series = series + first+"  ";
-            temp = first;
-            first = next;
-            next = temp+next;
+            total += j;
       }
-    return "The Fibonacci series of length "+ lenghtOfSeries +" is: "+series;
+
+    return "The sum of numbers from 0 to "+ lenghtOfSeries +" is: "+total;
   }
 }
