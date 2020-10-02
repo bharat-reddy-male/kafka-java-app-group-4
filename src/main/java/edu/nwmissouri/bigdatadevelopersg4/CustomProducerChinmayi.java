@@ -1,4 +1,4 @@
-package com.spnotes.kafka.simple;
+package com.edu.nwmissouri.bigdatadevelopersg4;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -39,7 +39,7 @@ public class CustomProducerChinmayi {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = +i " This message is from CustomProducerChinmayi " +topic+" Producer";
+      String message = +i +" This message is from CustomProducerChinmayi " +topicName+" Producer";
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
