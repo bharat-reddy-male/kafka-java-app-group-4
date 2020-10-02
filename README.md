@@ -27,7 +27,7 @@ Step-5 : Run the consumer from the root folder of the application using below co
 
 ```java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.Consumer topic group ```
 
-Step-6 : Similarly start the consumer: 
+Step-6 : Similarly start the producer: 
 
 ```java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.CustomProducerBharat topic```
 
