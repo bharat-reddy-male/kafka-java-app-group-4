@@ -10,17 +10,18 @@ import java.util.Scanner;
 /**
  * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
  */
-public class ProducerHello {
+public class CustomProducerChinmayi {
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
     if (argv.length != 1) {
-      System.err.println("Please specify 1 parameter (the name of the topic)");
+      System.err.println("Please specify atleast 1 parameter (the name of the topic)");
       System.exit(-1);
     }
+	
     String topicName = argv[0];
     in = new Scanner(System.in);
-    System.out.println("Thank you for providing the topic " + topicName + "\n");
+    System.out.println("Thank you for providing the topic: " + topicName + "\n");
     System.out.println("Enter message (type exit to quit).\n");
 
     // Configure the Producer
@@ -38,7 +39,7 @@ public class ProducerHello {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = +i " Im from Manisha's " +topic+" Producer";
+      String message = +i " This message is from CustomProducerChinmayi " +topic+" Producer";
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
