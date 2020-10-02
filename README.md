@@ -66,7 +66,14 @@ Step-6: To start the producer CustomProducerBhavya run the below command from th
 
 GitHub profile:[Chinmayi](https://github.com/Chinmayi98)
 
---
+Follow the steps 1 through 5 as mentioned above. Start the Zookeeper service, Kafka service, build the jar file and start the consumer.
+
+Step-6: Run the command below to start the producer "CustomProducerChinmayi" from the root folder
+
+```
+java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.CustomProducerChinmayi topic
+
+```
 --
 --
 --
