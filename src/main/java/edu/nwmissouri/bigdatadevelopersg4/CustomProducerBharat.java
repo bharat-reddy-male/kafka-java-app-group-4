@@ -5,10 +5,11 @@ import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
+ * Created by Bharat on 10/02/2020.
  */
 public class CustomProducerBharat {
   private static Scanner in;
@@ -38,8 +39,8 @@ public class CustomProducerBharat {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = "Custom producer loop: " + i;
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
+      String series = fibonacci();
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, series);
       producer.send(rec);
     }
 
@@ -54,5 +55,22 @@ public class CustomProducerBharat {
 
     in.close();
     producer.close();
+  }
+
+  private static String fibonacci() {
+      Random r = new Random();
+      int lenghtOfSeries = r.nextInt(15);
+      int first = 0;
+      int next = 1;
+      int temp;
+    String series = "";
+
+      for(int j=0; j<lenghtOfSeries;j++){
+            series = series + first+"  ";
+            temp = first;
+            first = next;
+            next = temp+next;
+      }
+    return "The Fibonacci series of length "+ lenghtOfSeries +" is: "+series;
   }
 }

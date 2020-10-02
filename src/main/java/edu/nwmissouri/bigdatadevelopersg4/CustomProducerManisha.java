@@ -1,4 +1,4 @@
-package com.spnotes.kafka.simple;
+package com.edu.nwmissouri.bigdatadevelopersg4;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
  */
-public class ProducerHello {
+public class CustomProducerManisha {
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
@@ -38,7 +38,7 @@ public class ProducerHello {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = +i " Im from Manisha's " +topic+" Producer";
+      String message = +i +" Im from Manisha's " +topicName+" Producer";
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
