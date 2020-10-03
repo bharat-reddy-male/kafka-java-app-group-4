@@ -116,10 +116,7 @@ Follow the steps 1 to 5 as mentioned above. Then start the Zookeeper service, Ka
 
 Step-6: Run the command below to start the producer "CustomProducerManisha" from the root folder of the repo.
 
-```
-java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.CustomProducerManisha topic
-
-```
+```java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.CustomProducerManisha topic```
 --
 --
 --
