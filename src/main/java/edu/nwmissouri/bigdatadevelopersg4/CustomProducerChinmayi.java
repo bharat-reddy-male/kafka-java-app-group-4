@@ -39,7 +39,8 @@ public class CustomProducerChinmayi {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = +i +" This message is from CustomProducerChinmayi " +topicName+" Producer";
+      String message = message();
+	  // +i +" This message is from CustomProducerChinmayi " +topicName+" Producer";
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
@@ -55,5 +56,10 @@ public class CustomProducerChinmayi {
 
     in.close();
     producer.close();
+  }
+  
+  private static String message() {
+	  String message = "This message is from CustomProducerChinmayi Producer";
+	  return message;
   }
 }
