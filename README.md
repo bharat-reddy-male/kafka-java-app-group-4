@@ -89,9 +89,11 @@ java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar 
 
 GitHub profile:[Chetan](https://github.com/chetankudaravalli16)
 
-Follow steps(1-5) above to start the zookeeeper, kafka service and build the jar file. Then start the consumer.
+![My Picture](dp.jpeg)
 
-Step-6: To start the producer CustomProducerChetan run the below command from the root folder of the application.
+* Follow steps(1-5) above to start the zookeeeper, kafka service and build the jar file. Then start the consumer.
+
+* Step-6: To start the producer CustomProducerChetan run the below command from the root folder of the application.
 
 ```
 java -cp .\target\kafka-java-app-group-4-1.0-SNAPSHOT-jar-with-dependencies.jar com.edu.nwmissouri.bigdatadevelopersg4.CustomProducerChetan topic
